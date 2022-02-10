@@ -1,0 +1,38 @@
+@import "./peace.css";
+
+:root{
+    --brand-color: #1ecbe1;
+}
+
+.sidebar{
+    overflow: hidden;
+    background: #EFE5FD;
+    color: var();
+}
+
+.sidebar:hover{
+    overflow: scroll;
+}
+
+.side-logo{
+    background: var(--primary);
+    color: var(--brand-color);
+    font-weight: var(--bold);
+    font-size: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.side-logo img{
+    height: 100%;
+}
+
+.side-item{
+    box-shadow: unset;
+    font-weight: var(--semi-bold);
+    font-size: 0.9rem;
+    color: var(--primary-900);
+    border-bottom: 1px solid var(--primary);
+    cursor: pointer;
+}
