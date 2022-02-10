@@ -1,22 +1,19 @@
 @import "./peace.css";
 
-:root{
-    --brand-color: #1ecbe1;
+body{
+    display: grid;
+    grid-template-columns: [sidebar]1fr [content]6fr;
 }
 
 .sidebar{
-    overflow: hidden;
+    position: static;
     background: #EFE5FD;
-    color: var();
-}
-
-.sidebar:hover{
-    overflow: scroll;
+    border-right: 1px solid var(--primary);
 }
 
 .side-logo{
     background: var(--primary);
-    color: var(--brand-color);
+    color: var(--secondary);
     font-weight: var(--bold);
     font-size: 2rem;
     width: 100%;
@@ -29,10 +26,20 @@
 }
 
 .side-item{
-    box-shadow: unset;
     font-weight: var(--semi-bold);
     font-size: 0.9rem;
     color: var(--primary-900);
     border-bottom: 1px solid var(--primary);
     cursor: pointer;
+}
+
+.side-item:hover{
+    background: var(--primary);
+    color: var(--secondary);
+}
+
+article{
+    padding: 3em;
+    color: var(--primary-900);
+
 }
