@@ -3,11 +3,50 @@
 body{
     display: grid;
     grid-template-columns: [sidebar]1fr [content]6fr;
+    color: var(--primary-900)
+}
+/* will be added to style-guide.css soon */
+a:hover{
+    text-decoration: none;
 }
 
+a:visited{
+    color: inherit;
+}
+
+/* whole page except the sidebar */
+.page-content{
+    padding: 3em 0 0 3em;
+}
+
+/* page heading */
+.page-header{
+    padding-bottom: 3em;
+}
+
+/* divides the page into sections */
+.page-section{
+    padding-bottom: 3em;
+}
+
+/* heading for each section */
+.page-section--title{
+    margin-bottom: 8px;
+}
+
+/* paragraph explaining the header/code/hyperlink */
+.page-section--para{
+    margin: 1rem;
+}
+
+/* mostly consists of code snippets, but can have other ineractable elements as well */
+.page-section--code{
+    margin: 0 1rem 1rem 1rem;
+}
+
+/* adding extra style to sidebar(guess the components aren't that generic after all) */
 .sidebar{
     position: static;
-    background: #EFE5FD;
     border-right: 1px solid var(--primary);
 }
 
@@ -19,6 +58,14 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.contribute{
+    background: var(--primary);
+    color: var(--secondary);
+    font-weight: var(--semi-bold);
+    width: 100%;
+    padding: 1em;
 }
 
 .side-logo img{
@@ -36,10 +83,4 @@ body{
 .side-item:hover{
     background: var(--primary);
     color: var(--secondary);
-}
-
-article{
-    padding: 3em;
-    color: var(--primary-900);
-
 }
