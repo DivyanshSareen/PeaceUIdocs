@@ -6,6 +6,10 @@ body{
     color: var(--primary-900)
 }
 
+iframe{
+    max-width: 80%;
+}
+
 /* whole page except the sidebar */
 .page-content{
     padding: 3em 0 0 3em;
@@ -75,4 +79,9 @@ body{
 .side-item:hover{
     background: var(--primary);
     color: var(--secondary);
+}
+
+/* gives responsive components a width to work with */
+.control-display{
+    width: 31.25rem;
 }
