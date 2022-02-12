@@ -1,4 +1,4 @@
-@import "./peace.css";
+@import url("https://peaceui.netlify.app/peace.css");
 
 body{
     display: grid;
