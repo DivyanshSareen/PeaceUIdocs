@@ -5,14 +5,6 @@ body{
     grid-template-columns: [sidebar]1fr [content]6fr;
     color: var(--primary-900)
 }
-/* will be added to style-guide.css soon */
-a:hover{
-    text-decoration: none;
-}
-
-a:visited{
-    color: inherit;
-}
 
 /* whole page except the sidebar */
 .page-content{
