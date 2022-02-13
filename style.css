@@ -106,3 +106,9 @@ iframe{
 .control-display-img{
     width: 25rem;
 }
+
+/* background for grid cells */
+
+.grid > div{
+    background-color: var(--primary-100);
+}
