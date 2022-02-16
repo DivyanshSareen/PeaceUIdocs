@@ -56,6 +56,7 @@ iframe{
 
 /* mostly consists of code snippets, but can have other ineractable elements as well */
 .page-section--code{
+    color: initial;
     margin: 0 1rem 1rem 1rem;
 }
 
@@ -107,13 +108,14 @@ iframe{
 
 /* gives responsive components a width to work with */
 .control-display{
-    width: 31.25rem;
+    width: 20rem;
 }
 
 .control-display-img{
     width: 25rem;
 }
 
+/* badge display layout */
 .control-display-badge{
     margin: 1em;
     padding: 1em;
