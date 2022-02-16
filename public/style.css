@@ -114,6 +114,18 @@ iframe{
     width: 25rem;
 }
 
+.control-display-badge{
+    margin: 1em;
+    padding: 1em;
+    display: flex;
+    column-gap: 1em;
+    align-items: center;
+}
+
+.icon-badge{
+    font-size: 2rem;
+}
+
 /* background for grid cells */
 
 .grid > div{
