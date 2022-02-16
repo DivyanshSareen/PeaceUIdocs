@@ -2,8 +2,8 @@
 
 body{
     display: grid;
-    grid-template-columns: [sidebar]1fr [content]6fr;
-    color: var(--primary-900)
+    grid-template-columns: [sidebar]1fr [content]5fr [list]2fr;
+    color: var(--primary-900);
 }
 
 iframe{
@@ -65,7 +65,7 @@ iframe{
 
 .side-logo{
     background: var(--primary);
-    color: var(--secondary);
+    color: var(--background-grey);
     font-weight: var(--bold);
     font-size: 2rem;
     width: 100%;
@@ -75,7 +75,7 @@ iframe{
 
 .contribute{
     background: var(--primary);
-    color: var(--secondary);
+    color: var(--background-grey);
     font-weight: var(--semi-bold);
     width: 100%;
     padding: 1em;
