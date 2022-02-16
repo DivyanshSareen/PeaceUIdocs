@@ -133,3 +133,8 @@ iframe{
 .grid > div{
     background-color: var(--primary-100);
 }
+
+/* needed in github repo badge under getting started */
+.light-text{
+    color: var(--background-grey);
+}

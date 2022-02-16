@@ -11,6 +11,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style(s) -->
     <link rel="stylesheet" href="./style.css">
+    <!-- prism  -->
+    <link href="prism.css" rel="stylesheet" />
     <title>PeaceUI Docs</title>
 </head>
 
@@ -89,37 +91,35 @@
             <div class="page-section--code">
                 <button class="btn">button</button>
                 <br>
-                <iframe src="https://carbon.now.sh/embed/xOcJIvlrEt9k74BCmBp7"
-                    style="width: 437px; height: 207px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
+                <script type="text/plain" class="language-markup">
+<button class="btn">button</button>
+                </script>
             </div>
             <h4 class="h4 page-section--title">Button with Icon</h4>
             <div class="page-section--code">
                 <button class="btn"><i class="fas fa-plus"></i> button</button>
                 <br>
-                <iframe src="https://carbon.now.sh/embed/PzAc2SBQrICqvohCcGmr"
-                    style="width: 667px; height: 207px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
+                <script type="text/plain" class="language-markup">
+<button class="btn">
+    <i class="fas fa-plus"></i> button
+</button>
+                </script>
             </div>
             <h4 class="h4 page-section--title">Disabled Button</h4>
             <div class="page-section--code">
                 <button class="btn" disabled>button</button>
                 <br>
-                <iframe src="https://carbon.now.sh/embed/PzAc2SBQrICqvohCcGmr"
-                    style="width: 511px; height: 207px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
+                <script type="text/plain" class="language-markup">
+<button class="btn" disabled>button</button>
+                </script>
             </div>
             <h4 class="h4 page-section--title">Ghost Button</h4>
             <div class="page-section--code">
                 <button class="btn btn-ghost">button</button>
                 <br>
-                <iframe src="https://carbon.now.sh/embed/kYhqONm1kBfnfPLG7UPW"
-                    style="width: 519px; height: 207px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
+                <script type="text/plain" class="language-markup">
+<button class="btn btn-ghost">button</button>
+                </script>
             </div>
 
             <h4 class="h4 page-section--title">Status Buttons</h4>
@@ -129,13 +129,32 @@
                 <button class="btn btn-success">success</button>
                 <button class="btn btn-danger">danger</button>
                 <br>
-                <iframe src="https://carbon.now.sh/embed/fS4rKypabROgSIUoOqiY"
-                    style="width: 577px; height: 271px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
+                <script type="text/plain" class="language-markup">
+<button class="btn btn-primary">primary</button>
+<button class="btn btn-secondary">secondary</button>
+<button class="btn btn-success">success</button>
+<button class="btn btn-danger">danger</button>
+                </script>
             </div>
+
+            <h4 class="page-section--title h4">Floating Button</h4>
+            <button class="btn btn-float"><i class="fa-solid fa-plus"></i></button>
+            <script type="text/plain" class="language-markup">
+<button class="btn btn-float">
+    <i class="fa-solid fa-plus"></i>
+</button>
+            </script>
         </section>
     </section>
+    <section>
+        <div class="list stacked-list">
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+        </div>
+    </section>
+    <script src="./prism.js"></script>
 </body>
 
 </html>

@@ -11,6 +11,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style(s) -->
     <link rel="stylesheet" href="./style.css">
+    <!-- prism  -->
+    <link href="prism.css" rel="stylesheet" />
     <title>PeaceUI Docs</title>
 </head>
 
@@ -83,8 +85,8 @@
         </header>
         <section class="page-section">
             <p class="paragraph1 page-section--para">
-                The Cards are all responsive and will take up whole container space assigned to them. We provide the
-                following card components:
+                The Cards are highly customizable. This means that you can omit any of the sub-sections within a card
+                and it won't affect rest of the card layout.
             </p>
             <h4 class="h4 page-section--title">Default Card</h4>
             <div class="page-section--code control-display">
@@ -106,10 +108,32 @@
                     </div>
                 </div>
             </div>
-            <iframe src="https://carbon.now.sh/embed/l4XyaZyIJqCBlhSU83vm"
-                style="width: auto; height: 569px; border:0; transform: scale(1); overflow:hidden;"
-                sandbox="allow-scripts allow-same-origin">
-            </iframe>
+            <script type="text/plain" class="language-markup">
+<div class="card">
+    <div class="card-head">
+        <div class="card-title h4">
+            Header
+        </div>
+        <div class="card-subtitle subtitle2">
+            sub heading
+        </div>
+        <div class="card-icon">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+    <div class="card-img resp-img">
+        <img src="../resources/red-panda.jpeg" alt="card-image">
+    </div>
+    <div class="card-content paragraph1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Accusamus,laborum quidem. Vitae aut suscipit numquam.
+    </div>
+    <div class="card-option">
+        <button class="btn">button</button>
+        <button class="btn">button</button>
+    </div>
+</div>
+            </script>
             <h4 class="h4 page-section--title">Card with Badges</h4>
             <div class="page-section--code control-display">
                 <div class="card">
@@ -138,11 +162,37 @@
                     </div>
                 </div>
             </div>
-            <iframe src="https://carbon.now.sh/embed/8jQ5cQvnmEr0KYxwPzPz"
-                style="width: 1024px; height: 548px; border:0; transform: scale(1); overflow:hidden;"
-                sandbox="allow-scripts allow-same-origin">
-            </iframe>
-            </iframe>
+            <script type="text/plain" class="language-markup">
+<div class="card">
+    <div class="card-head">
+        <div class="card-title h4">
+            Header
+        </div>
+        <div class="card-subtitle subtitle2">
+            sub heading
+        </div>
+        <div class="card-icon">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+    <div class="card-img resp-img">
+        <img src="../resources/red-panda.jpeg" alt="card-image">
+    </div>
+    <div class="card-badge">
+        <div class="badge">new</div>
+        <div class="badge">sale</div>
+        <div class="badge">somethin</div>
+    </div>
+    <div class="card-content paragraph1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Accusamus, laborum quidem. Vitae aut suscipit numquam.
+    </div>
+    <div class="card-option">
+        <button class="btn">button</button>
+        <button class="btn">button</button>
+    </div>
+</div>
+            </script>
             <h4 class="h4 page-section--title">Overlay Card</h4>
             <div class="page-section--code control-display">
                 <div class="card card-overlay">
@@ -167,20 +217,42 @@
                     </div>
                 </div>
             </div>
-            <iframe src="https://carbon.now.sh/embed/21Om9YhKzPD5eWHY3WZF"
-                style="width: 1024px; height: 548px; border:0; transform: scale(1); overflow:hidden;"
-                sandbox="allow-scripts allow-same-origin">
-            </iframe>
+            <script type="text/plain" class="language-markup">
+<div class="card card-overlay">
+    <div class="card-head">
+        <div class="card-title h4">
+            Header
+        </div>
+        <div class="card-subtitle subtitle2">
+            sub heading
+        </div>
+    </div>
+    <div class="card-img resp-img">
+        <img src="../resources/red-panda.jpeg">
+    </div>
+    <div class="card-badge">
+        <div class="badge">new</div>
+        <div class="badge">sale</div>
+        <div class="badge">somethin</div>
+    </div>
+    <div class="card-content paragraph1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Accusamus, laborum quidem. Vitae aut suscipit numquam.
+    </div>
+    <div class="card-option">
+        <button class="btn">button</button>
+        <button class="btn">button</button>
+    </div>
+</div>
+            </script>
             <h4 class="h4 page-section--title">Horizontal Card</h4>
             <div class="page-section--code control-display">
                 <div class="card card-horizontal">
-
                     <div class="card-img"><img src="../resources/red-panda.jpeg" alt="card-image"></div>
                     <div class="card-head">
                         <div class="card-title h4">Header</div>
                         <div class="card-subtitle subtitle2">sub heading</div>
-                    </div>
-                    <div class="card-content paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <div class="card-icon"><i class="fa-solid fa-xmark"></i></div>
                     </div>
                     <div class="card-option">
                         <button class="btn">button</button>
@@ -188,10 +260,28 @@
                     </div>
                 </div>
             </div>
-            <iframe src="https://carbon.now.sh/embed/bTCwRl0nt3e9euxg8FKe"
-                style="width: 1024px; height: 548px; border:0; transform: scale(1); overflow:hidden;"
-                sandbox="allow-scripts allow-same-origin">
-            </iframe>
+            <script type="text/plain" class="language-markup">
+<div class="card card-horizontal">
+    <div class="card-img">
+        <img src="../resources/red-panda.jpeg" alt="card-image">
+    </div>
+    <div class="card-head">
+        <div class="card-title h4">
+            Header
+        </div>
+        <div class="card-subtitle subtitle2">
+            sub heading
+        </div>
+        <div class="card-icon">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+    <div class="card-option">
+        <button class="btn">button</button>
+        <button class="btn">button</button>
+    </div>
+</div>
+            </script>
             <h4 class="h4 page-section--title">Text-only Card</h4>
             <div class="page-section--code control-display">
                 <div class="card card-text-only">
@@ -207,12 +297,35 @@
                     </div>
                 </div>
             </div>
-            <iframe src="https://carbon.now.sh/embed/vwVOK4hoNX7eknnZUBe1"
-                style="width: 1003px; height: 377px; border:0; transform: scale(1); overflow:hidden;"
-                sandbox="allow-scripts allow-same-origin">
-            </iframe>
+            <script type="text/plain" class="language-markup">
+<div class="card card-text-only">
+    <div class="card-head">
+        <div class="card-title h4">
+            Header
+        </div>
+        <div class="card-subtitle subtitle2">
+            sub heading
+        </div>
+    </div>
+    <div class="card-content paragraph1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Sequi quidem deserunt ex asperiores cum mollitia sapiente, 
+        dolore ipsa minus reprehenderit soluta, eaque
+        illum in id saepe, officia iusto provident ipsam!
+    </div>
+</div>
+            </script>
         </section>
     </section>
+    <section>
+        <div class="list stacked-list">
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+        </div>
+    </section>
+    <script src="./prism.js"></script>
 </body>
 
 </html>

@@ -11,6 +11,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style(s) -->
     <link rel="stylesheet" href="./style.css">
+    <!-- prism  -->
+    <link href="./prism.css" rel="stylesheet" />
     <title>PeaceUI Docs</title>
 </head>
 
@@ -87,13 +89,13 @@
             </span>
         </header>
         <section class="page-section">
-            <h4 class="h4 page-section--title">
+            <h4 class="h4 page-section--titl">
                 GitHub Repository
             </h4>
             <p class="paragraph1 page-section--para">
                 Clone our GitHub repository and import components locally.
             </p>
-            <div class="h4 badge page-section--code">
+            <div class="h4 badge page-section--code light-text">
                 <a href="https://github.com/DivyanshSareen/PeaceUI" target="_blank">
                     <img src="./logo-light.svg" alt="logo">
                     GitHub
@@ -113,10 +115,9 @@
             <p class="paragraph2  page-section--para">
                 Paste this code in you html
             </p>
-            <iframe class="page-section--code" src="https://carbon.now.sh/embed/tEAsnJs5d414AdCKGaA2"
-                style="width: 707px; height: 207px; border:0; transform: scale(1); overflow:hidden;"
-                sandbox="allow-scripts allow-same-origin">
-            </iframe>
+            <script type="text/plain" class="language-markup">
+<link rel="stylesheet" href="https://peaceui.netlify.app/peace.css">
+            </script>
             <h4 class="h4 center-text">
                 OR
             </h4>
@@ -126,13 +127,21 @@
             <p class="paragraph2 page-section--para">
                 Place this code in your CSS file
             </p>
-            <iframe class="page-section--code" src="https://carbon.now.sh/embed/mOG0tVZk8tk6EIRxl5LY"
-                style="width: 691px; height: 196px; border:0; transform: scale(1); overflow:hidden;"
-                sandbox="allow-scripts allow-same-origin">
-            </iframe>
-        </section>
+            <script type="text/plain" class="language-css">
+@import url("https://peaceui.netlify.app/peace.css");
+            </script>
 
+        </section>
     </section>
+    <section>
+        <div class="list stacked-list">
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+        </div>
+    </section>
+    <script src="./prism.js"></script>
 </body>
 
 </html>

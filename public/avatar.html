@@ -11,6 +11,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style(s) -->
     <link rel="stylesheet" href="./style.css">
+    <!-- prism  -->
+    <link href="./prism.css" rel="stylesheet" />
     <title>PeaceUI Docs</title>
 </head>
 
@@ -89,6 +91,11 @@
             <div class="page-section--code">
                 <h6 class="h6 page-section--title">Deafult Avatar</h6>
                 <div class="avatar"><img src="../resources/avatar.jpeg" alt="avatar-img"></div>
+                <script type="text/plain" class="language-markup">
+<div class="avatar">
+    <img src="../resources/avatar.jpeg" alt="avatar-img">
+</div>
+                </script>
             </div>
             <div class="page-section--code">
                 <h6 class="h6">Avatar Sizes</h6>
@@ -102,6 +109,17 @@
                 <div class="avatar avatar-l">
                     <img src="../resources/avatar.jpeg" alt="avatar-img">
                 </div>
+                <script type="text/plain" class="language-markup">
+<div class="avatar avatar-s">
+    <img src="../resources/avatar.jpeg" alt="avatar-img">
+</div>
+<div class="avatar avatar-m">
+    <img src="../resources/avatar.jpeg" alt="avatar-img">
+</div>
+<div class="avatar avatar-l">
+    <img src="../resources/avatar.jpeg" alt="avatar-img">
+</div>
+            </script>
             </div>
             <div class="page-section--code">
                 <h6 class="h6 page-section--title">Avatar with Status</h6>
@@ -126,14 +144,36 @@
                     <img src="../resources/avatar.jpeg" alt="user-img">
                     <div class="avatar-status badge-danger"></div>
                 </div>
+                <script type="text/plain" class="language-markup">
+<div class="avatar avatar-m resp-img round-resp-img avatar-badge">
+    <img src="../resources/avatar.jpeg" alt="user-img">
+    <div class="avatar-status"></div>
+</div>
+<div class="avatar avatar-m resp-img round-resp-img avatar-badge">
+    <img src="../resources/avatar.jpeg" alt="user-img">
+    <div class="avatar-status badge-success"></div>
+</div>
+<div class="avatar avatar-m resp-img round-resp-img avatar-badge">
+    <img src="../resources/avatar.jpeg" alt="user-img">
+    <div class="avatar-status badge-warning"></div>
+</div>
+<div class="avatar avatar-m resp-img round-resp-img avatar-badge">
+    <img src="../resources/avatar.jpeg" alt="user-img">
+    <div class="avatar-status badge-danger"></div>
+</div>
+            </script>
             </div>
         </section>
     </section>
     <section>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel placeat enim voluptate velit nam. In harum ea
-        consequatur quae voluptatem reiciendis incidunt, officiis veritatis, voluptatibus tenetur corrupti libero
-        asperiores deleniti.
+        <div class="list stacked-list">
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+        </div>
     </section>
+    <script src="./prism.js"></script>
 </body>
 
 </html>

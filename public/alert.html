@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <!-- style(s) -->
     <link rel="stylesheet" href="./style.css">
+    <!-- prism  -->
+    <link href="./prism.css" rel="stylesheet" />
     <title>PeaceUI Docs</title>
 </head>
 
@@ -116,17 +116,44 @@
                     This is a danger alert message!
                     <i class="fas fa-times alert-action"></i>
                 </div>
-                <iframe class="page-section--code" src="https://carbon.now.sh/embed/sPN0tf1yvjkPBs2FPtlO"
-                    style="width: 535px; height: 718px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
+                <script type="text/plain" class="language-markup">
+<div class="alert">
+    <i class="fas fa-exclamation-circle"></i>
+    This is a default alert message!
+    <i class="fas fa-times alert-action"></i>
+</div>
+<div class="alert alert-info">
+    <i class="fas fa-exclamation-circle"></i>
+    This is an info alert message!
+    <i class="fas fa-times alert-action"></i>
+</div>
+<div class="alert alert-success">
+    <i class="fas fa-check-circle"></i>
+    This is a success alert message!
+    <i class="fas fa-times alert-action"></i>
+</div>
+<div class="alert alert-warning">
+    <i class="fas fa-exclamation-circle"></i>
+    This is a warning alert message!
+    <i class="fas fa-times alert-action"></i>
+</div>
+<div class="alert alert-danger">
+    <i class="fas fa-exclamation-triangle"></i>
+    This is a danger alert message!
+    <i class="fas fa-times alert-action"></i>
+</div>
+                </script>
         </section>
     </section>
     <section>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel placeat enim voluptate velit nam. In harum ea
-        consequatur quae voluptatem reiciendis incidunt, officiis veritatis, voluptatibus tenetur corrupti libero
-        asperiores deleniti.
+        <div class="list stacked-list">
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+        </div>
     </section>
+    <script src="./prism.js"></script>
 </body>
 
 </html>

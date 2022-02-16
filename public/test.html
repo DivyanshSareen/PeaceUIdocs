@@ -10,8 +10,6 @@
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style(s) -->
-    <link rel="stylesheet" href="./style.css">
-    <!-- prism  -->
     <link href="prism.css" rel="stylesheet" />
     <title>PeaceUI Docs</title>
 </head>
@@ -80,127 +78,77 @@
     <section class="page-content">
         <header class="page-header">
             <h3 class="h3">
-                List
+                Avatar
             </h3>
         </header>
         <section class="page-section">
             <p class="paragraph1 page-section--para">
-                We got the following list types:
+                Avatars are used to display user profiles.
             </p>
-            <h4 class="h4 page-section--title">Default List</h4>
-            <div class="page-section--code control-display">
-                <div class="list">
-                    <div class="list-item">
-                        List Item
-                    </div>
-                    <div class="list-item">
-                        List Item
-                    </div>
-                    <div class="list-item">
-                        List Item
-                    </div>
-                    <div class="list-item">
-                        List Item
-                    </div>
-                </div>
-                <br>
+            <h4 class="h4 page-section--title">Types of Avatars</h4>
+            <div class="page-section--code">
+                <h6 class="h6 page-section--title">Deafult Avatar</h6>
+                <div class="avatar"><img src="../resources/avatar.jpeg" alt="avatar-img"></div>
             </div>
-            <script type="text/plain" class="language-markup">
-<div class="list">
-    <div class="list-item">
-        List Item
-    </div>
-    <div class="list-item">
-        List Item
-    </div>
-    <div class="list-item">
-        List Item
-    </div>
-    <div class="list-item">
-        List Item
-    </div>
-</div>
-            </script>
-            <h4 class="h4 page-section--title">Stacked List</h4>
-            <div class="page-section--code control-display">
-                <div class="list stacked-list">
-                    <div class="list-item">
-                        List Item
-                    </div>
-                    <div class="list-item">
-                        List Item
-                    </div>
-                    <div class="list-item">
-                        List Item
-                    </div>
-                    <div class="list-item">
-                        List Item
-                    </div>
+            <div class="page-section--code">
+                <h6 class="h6">Avatar Sizes</h6>
+                <p class="paragraph1">We got small, medium and large avatars.</p>
+                <div class="avatar avatar-s">
+                    <img src="../resources/avatar.jpeg" alt="avatar-img">
                 </div>
-                <br>
-            </div>
-            <script type="text/plain" class="language-markup">
-<div class="list stacked-list">
-    <div class="list-item">
-        List Item
-    </div>
-    <div class="list-item">
-        List Item
-    </div>
-    <div class="list-item">
-        List Item
-    </div>
-    <div class="list-item">
-        List Item
-    </div>
-</div>
-            </script>
-            <h4 class="h4 page-section--title">Stacked List with Options</h4>
-            <div class="page-section--code control-display">
-                <div class="list stacked-list option-list">
-                    <div class="list-item">
-                        List Item <span class="list-item-option badge">new</span>
-                    </div>
-                    <div class="list-item">
-                        List Item <span class="list-item-option badge">new</span>
-                    </div>
-                    <div class="list-item">
-                        List Item <span class="list-item-option badge">new</span>
-                    </div>
-                    <div class="list-item">
-                        List Item <span class="list-item-option badge">new</span>
-                    </div>
+                <div class="avatar avatar-m">
+                    <img src="../resources/avatar.jpeg" alt="avatar-img">
                 </div>
-                <br>
+                <div class="avatar avatar-l">
+                    <img src="../resources/avatar.jpeg" alt="avatar-img">
+                </div>
             </div>
-            <script type="text/plain" class="language-markup">
-<div class="list stacked-list option-list">
-    <div class="list-item">
-        List Item 
-        <span class="list-item-option badge">
-            new
-        </span>
-    </div>
-    <div class="list-item">
-        List Item 
-        <span class="list-item-option badge">
-            new
-        </span>
-    </div>
-    <div class="list-item">
-        List Item 
-        <span class="list-item-option badge">
-            new
-        </span>
-    </div>
-    <div class="list-item">
-        List Item 
-        <span class="list-item-option badge">
-            new
-        </span>
-    </div>
-</div>
-            </script>
+            <div class="page-section--code">
+                <h6 class="h6 page-section--title">Avatar with Status</h6>
+                <p class="paragraph1">Use responsive image classes and avatar sizes to get the best results.</p>
+                <div class="avatar avatar-m resp-img
+                            round-resp-img avatar-badge">
+                    <img src="../resources/avatar.jpeg" alt="user-img">
+                    <div class="avatar-status"></div>
+                </div>
+                <div class="avatar avatar-m resp-img
+                                            round-resp-img avatar-badge">
+                    <img src="../resources/avatar.jpeg" alt="user-img">
+                    <div class="avatar-status badge-success"></div>
+                </div>
+                <div class="avatar avatar-m resp-img
+                                            round-resp-img avatar-badge">
+                    <img src="../resources/avatar.jpeg" alt="user-img">
+                    <div class="avatar-status badge-warning"></div>
+                </div>
+                <div class="avatar avatar-m resp-img
+                                            round-resp-img avatar-badge">
+                    <img src="../resources/avatar.jpeg" alt="user-img">
+                    <div class="avatar-status badge-danger"></div>
+                </div>
+            </div>
+            <pre><code class="language-markup">
+                &#x3C;div class=&#x22;avatar avatar-m resp-img
+                round-resp-img avatar-badge&#x22;&#x3E;
+                &#x3C;img src=&#x22;../resources/avatar.jpeg&#x22; alt=&#x22;user-img&#x22;&#x3E;
+                &#x3C;div class=&#x22;avatar-status&#x22;&#x3E;&#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;avatar avatar-m resp-img
+                round-resp-img avatar-badge&#x22;&#x3E;
+                &#x3C;img src=&#x22;../resources/avatar.jpeg&#x22; alt=&#x22;user-img&#x22;&#x3E;
+                &#x3C;div class=&#x22;avatar-status badge-success&#x22;&#x3E;&#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;avatar avatar-m resp-img
+                round-resp-img avatar-badge&#x22;&#x3E;
+                &#x3C;img src=&#x22;../resources/avatar.jpeg&#x22; alt=&#x22;user-img&#x22;&#x3E;
+                &#x3C;div class=&#x22;avatar-status badge-warning&#x22;&#x3E;&#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;avatar avatar-m resp-img
+                round-resp-img avatar-badge&#x22;&#x3E;
+                &#x3C;img src=&#x22;../resources/avatar.jpeg&#x22; alt=&#x22;user-img&#x22;&#x3E;
+                &#x3C;div class=&#x22;avatar-status badge-danger&#x22;&#x3E;&#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+        </code></pre>
         </section>
     </section>
     <section>
