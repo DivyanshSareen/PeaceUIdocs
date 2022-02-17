@@ -11,13 +11,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style(s) -->
     <link rel="stylesheet" href="./style.css">
+    <!-- prism  -->
+    <link href="prism.css" rel="stylesheet" />
     <title>PeaceUI Docs</title>
 </head>
 
 <body>
     <nav>
         <div class="sidebar">
-            <div class="side-logo"><img src="logo.svg" alt="logo"> PeaceUI</div>
+            <div class="side-logo"><img src="logo-light.svg" alt="logo"> PeaceUI</div>
             <div class="side-list">
                 <a href="./index.html">
                     <div class="side-item">Getting Started</div>
@@ -70,7 +72,7 @@
             </div>
             <div class="contribute">
                 <a class="h6" target="_blank" href="https://github.com/DivyanshSareen/PeaceUI">
-                    <img src="logo.svg" alt="logo"> Contribute <i class="fa-brands fa-github-alt"></i>
+                    <img src="logo-light.svg" alt="logo"> Contribute <i class="fa-brands fa-github-alt"></i>
                 </a>
             </div>
         </div>
@@ -78,46 +80,43 @@
     <section class="page-content">
         <header class="page-header">
             <h3 class="h3">
-                Alert
+                Navbar
             </h3>
         </header>
         <section class="page-section">
             <p class="paragraph1 page-section--para">
-                Alerts can be used to notify user. They can represent states like info, success, warning and danger.
+                Sidebar provides left side navigation. It is also used by this doc site :).
             </p>
-            <h4 class="h4 page-section--title">Types of Alert Messages</h4>
+            <h4 class="h4 page-section--title">Top Navigation</h4>
             <div class="page-section--code">
-                <div class="alert">
-                    <i class="fas fa-exclamation-circle"></i>
-                    This is a default alert message!
-                    <i class="fas fa-times alert-action"></i>
-                </div>
-                <div class="alert alert-info">
-                    <i class="fas fa-exclamation-circle"></i>
-                    This is an info alert message!
-                    <i class="fas fa-times alert-action"></i>
-                </div>
-                <div class="alert alert-success">
-                    <i class="fas fa-check-circle"></i>
-                    This is a success alert message!
-                    <i class="fas fa-times alert-action"></i>
-                </div>
-                <div class="alert alert-warning">
-                    <i class="fas fa-exclamation-circle"></i>
-                    This is a warning alert message!
-                    <i class="fas fa-times alert-action"></i>
-                </div>
-                <div class="alert alert-danger">
-                    <i class="fas fa-exclamation-triangle"></i>
-                    This is a danger alert message!
-                    <i class="fas fa-times alert-action"></i>
-                </div>
-                <iframe class="page-section--code" src="https://carbon.now.sh/embed/sPN0tf1yvjkPBs2FPtlO"
-                    style="width: 535px; height: 718px; border:0; transform: scale(1); overflow:hidden;"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
+                <iframe class="side-frame" src="./iframes/sidebar.html" title="Navibar | Iframe"></iframe>
+                <br>
+            </div>
+            <script type="text/plain" class="language-markup">
+<aside>
+    <div class="sidebar">
+        <div class="side-logo">
+            Company Logo
+        </div>
+        <div class="side-list">
+            <div class="side-item">Home</div>
+            <div class="side-item">Explore</div>
+            <div class="side-item">About</div>
+        </div>
+    </div>
+</aside>
+            </script>
         </section>
     </section>
+    <section>
+        <div class="list stacked-list">
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+        </div>
+    </section>
+    <script src="./prism.js"></script>
 </body>
 
 </html>

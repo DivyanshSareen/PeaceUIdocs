@@ -11,13 +11,17 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style(s) -->
     <link rel="stylesheet" href="./style.css">
+    <!-- prism  -->
+    <link href="./prism.css" rel="stylesheet" />
     <title>PeaceUI Docs</title>
 </head>
 
 <body>
     <nav>
         <div class="sidebar">
-            <div class="side-logo"><img src="logo.svg" alt="logo"> PeaceUI</div>
+            <div class="side-logo">
+                <img src="logo-light.svg" alt="logo"> PeaceUI
+            </div>
             <div class="side-list">
                 <a href="./index.html">
                     <div class="side-item">Getting Started</div>
@@ -70,7 +74,7 @@
             </div>
             <div class="contribute">
                 <a class="h6" target="_blank" href="https://github.com/DivyanshSareen/PeaceUI">
-                    <img src="logo.svg" alt="logo"> Contribute <i class="fa-brands fa-github-alt"></i>
+                    <img src="logo-light.svg" alt="logo"> Contribute <i class="fa-brands fa-github-alt"></i>
                 </a>
             </div>
         </div>
@@ -78,24 +82,66 @@
     <section class="page-content">
         <header class="page-header">
             <h3 class="h3">
-                Navbar
+                Getting Started
             </h3>
+            <span class="sub-title2">
+                Get your CSS components up and running
+            </span>
         </header>
         <section class="page-section">
+            <h4 class="h4 page-section--titl">
+                GitHub Repository
+            </h4>
             <p class="paragraph1 page-section--para">
-                Currently we support top navigation.
+                Clone our GitHub repository and import components locally.
             </p>
-            <h4 class="h4 page-section--title">Top Navigation</h4>
-            <div class="page-section--code">
-                <iframe class="nav-frame" src="./iframes/nav.html" title="Navibar | Iframe"></iframe>
-                <br>
+            <div class="h4 badge page-section--code light-text">
+                <a href="https://github.com/DivyanshSareen/PeaceUI" target="_blank">
+                    <img src="./logo-light.svg" alt="logo">
+                    GitHub
+                </a>
             </div>
-            <iframe src="https://carbon.now.sh/embed/UDbTmJLTQ3WObD3mCO5u"
-                style="width: 543px; height: 399px; border:0; transform: scale(1); overflow:hidden;"
-                sandbox="allow-scripts allow-same-origin">
-            </iframe>
+        </section>
+        <section class="page-section">
+            <h4 class="h4 page-section--title">
+                CDN Link
+            </h4>
+            <p class="paragraph1 page-section--para">
+                Use our hosted CSS components directly in your projects
+            </p>
+            <h6 class="h6 page-section--title">
+                HTML
+            </h6>
+            <p class="paragraph2  page-section--para">
+                Paste this code in you html
+            </p>
+            <script type="text/plain" class="language-markup">
+<link rel="stylesheet" href="https://peaceui.netlify.app/peace.css">
+            </script>
+            <h4 class="h4 center-text">
+                OR
+            </h4>
+            <h6 class="h6 page-section--title">
+                CSS
+            </h6>
+            <p class="paragraph2 page-section--para">
+                Place this code in your CSS file
+            </p>
+            <script type="text/plain" class="language-css">
+@import url("https://peaceui.netlify.app/peace.css");
+            </script>
+
         </section>
     </section>
+    <section>
+        <div class="list stacked-list">
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+        </div>
+    </section>
+    <script src="./prism.js"></script>
 </body>
 
 </html>

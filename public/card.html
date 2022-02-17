@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style(s) -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- prism  -->
+    <link href="prism.css" rel="stylesheet" />
+    <title>PeaceUI Docs</title>
+</head>
+
+<body>
+    <nav>
+        <div class="sidebar">
+            <div class="side-logo"><img src="logo-light.svg" alt="logo"> PeaceUI</div>
+            <div class="side-list">
+                <a href="./index.html">
+                    <div class="side-item">Getting Started</div>
+                </a>
+                <a href="./alert.html">
+                    <div class="side-item">Alert</div>
+                </a>
+                <a href="./avatar.html">
+                    <div class="side-item">Avatar</div>
+                </a>
+                <a href="./badge.html">
+                    <div class="side-item">Badge</div>
+                </a>
+                <a href="./button.html">
+                    <div class="side-item">Button</div>
+                </a>
+                <a href="./card.html">
+                    <div class="side-item">Card</div>
+                </a>
+                <a href="./image.html">
+                    <div class="side-item">Image</div>
+                </a>
+                <a href="./input.html">
+                    <div class="side-item">Input</div>
+                </a>
+                <a href="./list.html">
+                    <div class="side-item">List</div>
+                </a>
+                <a href="./nav.html">
+                    <div class="side-item">Navbar</div>
+                </a>
+                <a href="./sidebar.html">
+                    <div class="side-item">Sidebar</div>
+                </a>
+                <a href="./typography.html">
+                    <div class="side-item">Topography</div>
+                </a>
+                <a href="./modal.html">
+                    <div class="side-item">Modal</div>
+                </a>
+                <a href="./rating.html">
+                    <div class="side-item">Rating</div>
+                </a>
+                <a href="./snackbar.html">
+                    <div class="side-item">Snackbar</div>
+                </a>
+                <a href="./grid.html">
+                    <div class="side-item">Grid</div>
+                </a>
+            </div>
+            <div class="contribute">
+                <a class="h6" target="_blank" href="https://github.com/DivyanshSareen/PeaceUI">
+                    <img src="logo-light.svg" alt="logo"> Contribute <i class="fa-brands fa-github-alt"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="page-content">
+        <header class="page-header">
+            <h3 class="h3">
+                Card
+            </h3>
+        </header>
+        <section class="page-section">
+            <p class="paragraph1 page-section--para">
+                The Cards are highly customizable. This means that you can omit any of the sub-sections within a card
+                and it won't affect rest of the card layout.
+            </p>
+            <h4 class="h4 page-section--title">Default Card</h4>
+            <div class="page-section--code control-display">
+                <div class="card">
+                    <div class="card-head">
+                        <div class="card-title h4">Header</div>
+                        <div class="card-subtitle subtitle2">sub heading</div>
+                        <div class="card-icon"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+                    <div class="card-img resp-img"><img src="../resources/red-panda.jpeg" alt="card-image"></div>
+                    <div class="card-content paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Accusamus,
+                        laborum
+                        quidem. Vitae aut suscipit numquam.
+                    </div>
+                    <div class="card-option">
+                        <button class="btn">button</button>
+                        <button class="btn">button</button>
+                    </div>
+                </div>
+            </div>
+            <script type="text/plain" class="language-markup">
+<div class="card">
+    <div class="card-head">
+        <div class="card-title h4">
+            Header
+        </div>
+        <div class="card-subtitle subtitle2">
+            sub heading
+        </div>
+        <div class="card-icon">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+    <div class="card-img resp-img">
+        <img src="../resources/red-panda.jpeg" alt="card-image">
+    </div>
+    <div class="card-content paragraph1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Accusamus,laborum quidem. Vitae aut suscipit numquam.
+    </div>
+    <div class="card-option">
+        <button class="btn">button</button>
+        <button class="btn">button</button>
+    </div>
+</div>
+            </script>
+            <h4 class="h4 page-section--title">Card with Badges</h4>
+            <div class="page-section--code control-display">
+                <div class="card">
+                    <div class="card-head">
+                        <div class="card-title h4">Header</div>
+                        <div class="card-subtitle subtitle2">sub heading</div>
+                        <div class="card-icon"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+                    <div class="card-img resp-img">
+                        <img src="../resources/red-panda.jpeg" alt="card-image">
+                    </div>
+                    <div class="card-badge">
+                        <div class="badge">new</div>
+                        <div class="badge">sale</div>
+                        <div class="badge">something</div>
+                    </div>
+                    <div class="card-content paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Accusamus,
+                        laborum
+                        quidem. Vitae aut suscipit numquam.
+                    </div>
+
+                    <div class="card-option">
+                        <button class="btn">button</button>
+                        <button class="btn">button</button>
+                    </div>
+                </div>
+            </div>
+            <script type="text/plain" class="language-markup">
+<div class="card">
+    <div class="card-head">
+        <div class="card-title h4">
+            Header
+        </div>
+        <div class="card-subtitle subtitle2">
+            sub heading
+        </div>
+        <div class="card-icon">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+    <div class="card-img resp-img">
+        <img src="../resources/red-panda.jpeg" alt="card-image">
+    </div>
+    <div class="card-badge">
+        <div class="badge">new</div>
+        <div class="badge">sale</div>
+        <div class="badge">something</div>
+    </div>
+    <div class="card-content paragraph1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Accusamus, laborum quidem. Vitae aut suscipit numquam.
+    </div>
+    <div class="card-option">
+        <button class="btn">button</button>
+        <button class="btn">button</button>
+    </div>
+</div>
+            </script>
+            <h4 class="h4 page-section--title">Overlay Card</h4>
+            <div class="page-section--code control-display">
+                <div class="card card-overlay">
+                    <div class="card-head">
+                        <div class="card-title h4">Header</div>
+                        <div class="card-subtitle subtitle2">sub heading</div>
+                    </div>
+                    <div class="card-img resp-img"><img src="../resources/red-panda.jpeg"></div>
+                    <div class="card-badge">
+                        <div class="badge">new</div>
+                        <div class="badge">sale</div>
+                        <div class="badge">something</div>
+                    </div>
+                    <div class="card-content paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Accusamus,
+                        laborum
+                        quidem. Vitae aut suscipit numquam.
+                    </div>
+                    <div class="card-option">
+                        <button class="btn">button</button>
+                        <button class="btn">button</button>
+                    </div>
+                </div>
+            </div>
+            <script type="text/plain" class="language-markup">
+<div class="card card-overlay">
+    <div class="card-head">
+        <div class="card-title h4">
+            Header
+        </div>
+        <div class="card-subtitle subtitle2">
+            sub heading
+        </div>
+    </div>
+    <div class="card-img resp-img">
+        <img src="../resources/red-panda.jpeg">
+    </div>
+    <div class="card-badge">
+        <div class="badge">new</div>
+        <div class="badge">sale</div>
+        <div class="badge">something</div>
+    </div>
+    <div class="card-content paragraph1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Accusamus, laborum quidem. Vitae aut suscipit numquam.
+    </div>
+    <div class="card-option">
+        <button class="btn">button</button>
+        <button class="btn">button</button>
+    </div>
+</div>
+            </script>
+            <h4 class="h4 page-section--title">Horizontal Card</h4>
+            <div class="page-section--code control-display">
+                <div class="card card-horizontal">
+                    <div class="card-img"><img src="../resources/red-panda.jpeg" alt="card-image"></div>
+                    <div class="card-head">
+                        <div class="card-title h4">Header</div>
+                        <div class="card-subtitle subtitle2">sub heading</div>
+                        <div class="card-icon"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+                    <div class="card-option">
+                        <button class="btn">button</button>
+                        <button class="btn">button</button>
+                    </div>
+                </div>
+            </div>
+            <script type="text/plain" class="language-markup">
+<div class="card card-horizontal">
+    <div class="card-img">
+        <img src="../resources/red-panda.jpeg" alt="card-image">
+    </div>
+    <div class="card-head">
+        <div class="card-title h4">
+            Header
+        </div>
+        <div class="card-subtitle subtitle2">
+            sub heading
+        </div>
+        <div class="card-icon">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+    <div class="card-option">
+        <button class="btn">button</button>
+        <button class="btn">button</button>
+    </div>
+</div>
+            </script>
+            <h4 class="h4 page-section--title">Text-only Card</h4>
+            <div class="page-section--code control-display">
+                <div class="card card-text-only">
+                    <div class="card-head">
+                        <div class="card-title h4">Header</div>
+                        <div class="card-subtitle subtitle2">sub heading</div>
+                    </div>
+                    <div class="card-content paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                        quidem
+                        deserunt ex asperiores cum mollitia sapiente, dolore ipsa minus reprehenderit soluta, eaque
+                        illum in id
+                        saepe, officia iusto provident ipsam!
+                    </div>
+                </div>
+            </div>
+            <script type="text/plain" class="language-markup">
+<div class="card card-text-only">
+    <div class="card-head">
+        <div class="card-title h4">
+            Header
+        </div>
+        <div class="card-subtitle subtitle2">
+            sub heading
+        </div>
+    </div>
+    <div class="card-content paragraph1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Sequi quidem deserunt ex asperiores cum mollitia sapiente, 
+        dolore ipsa minus reprehenderit soluta, eaque
+        illum in id saepe, officia iusto provident ipsam!
+    </div>
+</div>
+            </script>
+        </section>
+    </section>
+    <section>
+        <div class="list stacked-list">
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+        </div>
+    </section>
+    <script src="./prism.js"></script>
+</body>
+
+</html>

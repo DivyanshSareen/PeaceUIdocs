@@ -11,13 +11,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style(s) -->
     <link rel="stylesheet" href="./style.css">
+    <!-- prism  -->
+    <link href="prism.css" rel="stylesheet" />
     <title>PeaceUI Docs</title>
 </head>
 
 <body>
     <nav>
         <div class="sidebar">
-            <div class="side-logo"><img src="logo.svg" alt="logo"> PeaceUI</div>
+            <div class="side-logo"><img src="logo-light.svg" alt="logo"> PeaceUI</div>
             <div class="side-list">
                 <a href="./index.html">
                     <div class="side-item">Getting Started</div>
@@ -70,7 +72,7 @@
             </div>
             <div class="contribute">
                 <a class="h6" target="_blank" href="https://github.com/DivyanshSareen/PeaceUI">
-                    <img src="logo.svg" alt="logo"> Contribute <i class="fa-brands fa-github-alt"></i>
+                    <img src="logo-light.svg" alt="logo"> Contribute <i class="fa-brands fa-github-alt"></i>
                 </a>
             </div>
         </div>
@@ -78,42 +80,44 @@
     <section class="page-content">
         <header class="page-header">
             <h3 class="h3">
-                Image
+                Rating
             </h3>
         </header>
         <section class="page-section">
             <p class="paragraph1 page-section--para">
-                Images are responsive, will take full space of parent container.
+                We provide a star based rating system.
             </p>
-            <h4 class="h4 page-section--title">Responsive Image</h4>
-            <p class="paragraph1 page-section--para">
-                The following image component is in a container with width: 25rem;
-            </p>
-            <div class="page-section--code control-display-img">
-                <div class=" resp-img">
-                    <img src="https://images.pexels.com/photos/4681107/pexels-photo-4681107.jpeg?cs=srgb&dl=pexels-lucas-andrade-4681107.jpg&fm=jpg"
-                        alt="responsive-image">
+            <h4 class="h4 page-section--title">Star-based Rating</h4>
+            <div class="page-section--code">
+                <div class="rating">
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star checked"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
                 </div>
                 <br>
+                <script type="text/plain" class="language-markup">
+<div class="rating">
+    <i class="fa-solid fa-star checked"></i>
+    <i class="fa-solid fa-star checked"></i>
+    <i class="fa-solid fa-star checked"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+</div>
+                </script>
             </div>
-            <iframe src="https://carbon.now.sh/embed/R2xVH9KCtqvoNIA6bWc7"
-                style="width: 1024px; height: 271px; border:0; transform: scale(1); overflow:hidden;"
-                sandbox="allow-scripts allow-same-origin">
-            </iframe>
-            <h4 class="h4 page-section--title">Round Responsive Image</h4>
-            <div class="page-section--code control-display-img">
-                <div class="resp-img round-resp-img">
-                    <img src="https://images.pexels.com/photos/4681107/pexels-photo-4681107.jpeg?cs=srgb&dl=pexels-lucas-andrade-4681107.jpg&fm=jpg"
-                        alt="responsive-image">
-                </div>
-                <br>
-            </div>
-            <iframe src="https://carbon.now.sh/embed/DUiauWBDj7ieMBRk07oZ"
-                style="width: 1024px; height: 271px; border:0; transform: scale(1); overflow:hidden;"
-                sandbox="allow-scripts allow-same-origin">
-            </iframe>
         </section>
     </section>
+    <section>
+        <div class="list stacked-list">
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+            <div class="list-item"> List Item </div>
+        </div>
+    </section>
+    <script src="./prism.js"></script>
 </body>
 
 </html>
