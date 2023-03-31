@@ -1,0 +1,140 @@
+@import url("https://peaceui.netlify.app/peace.css");
+
+body{
+    display: grid;
+    grid-template-columns: [sidebar]1fr [content]5fr [list]2fr;
+    color: var(--primary-900);
+}
+
+iframe{
+    display: block;
+    width: 80%;
+    height: 500px;
+}
+
+/* iframe for nav */
+.nav-frame{
+    width: 100%;
+    max-width: 100%;
+}
+
+/* iframe for sidebar */
+.side-frame{
+    height: 30em;
+}
+
+/* iframe for modal */
+.modal-frame{
+    width: 100%;
+    height: 400px;
+}
+
+/* whole page except the sidebar */
+.page-content{
+    padding: 3em 0 0 3em;
+}
+
+/* page heading */
+.page-header{
+    padding-bottom: 3em;
+}
+
+/* divides the page into sections */
+.page-section{
+    padding-bottom: 3em;
+}
+
+/* heading for each section */
+.page-section--title{
+    margin-bottom: 8px;
+}
+
+/* paragraph explaining the header/code/hyperlink */
+.page-section--para{
+    margin: 1rem;
+}
+
+/* mostly consists of code snippets, but can have other ineractable elements as well */
+.page-section--code{
+    color: initial;
+    margin: 0 1rem 1rem 1rem;
+}
+
+/* adding extra style to sidebar(guess the components aren't that generic after all) */
+.sidebar{
+    position: static;
+    border-right: 1px solid var(--primary);
+}
+
+.side-logo{
+    background: var(--primary);
+    color: var(--background-grey);
+    font-weight: var(--bold);
+    font-size: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contribute{
+    background: var(--primary);
+    color: var(--background-grey);
+    font-weight: var(--semi-bold);
+    width: 100%;
+    padding: 1em;
+}
+
+.side-logo img{
+    height: 100%;
+}
+
+.side-item{
+    font-weight: var(--semi-bold);
+    font-size: 0.9rem;
+    color: var(--primary-900);
+    border-bottom: 1px solid var(--primary);
+    cursor: pointer;
+}
+
+.side-item:hover{
+    background: var(--primary);
+    color: var(--secondary);
+}
+
+/* for preview purposes */
+.avatar{
+    display: inline-block;
+}
+
+/* gives responsive components a width to work with */
+.control-display{
+    width: 20rem;
+}
+
+.control-display-img{
+    width: 25rem;
+}
+
+/* badge display layout */
+.control-display-badge{
+    margin: 1em;
+    padding: 1em;
+    display: flex;
+    column-gap: 1em;
+    align-items: center;
+}
+
+.icon-badge{
+    font-size: 2rem;
+}
+
+/* background for grid cells */
+
+.grid > div{
+    background-color: var(--primary-100);
+}
+
+/* needed in github repo badge under getting started */
+.light-text{
+    color: var(--background-grey);
+}

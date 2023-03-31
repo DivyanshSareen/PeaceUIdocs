@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style(s) -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- prism  -->
+    <link href="prism.css" rel="stylesheet" />
+    <title>PeaceUI Docs</title>
+</head>
+
+<body>
+    <nav>
+        <div class="sidebar">
+            <div class="side-logo"><img src="logo-light.svg" alt="logo"> PeaceUI</div>
+            <div class="side-list">
+                <a href="./index.html">
+                    <div class="side-item">Getting Started</div>
+                </a>
+                <a href="./alert.html">
+                    <div class="side-item">Alert</div>
+                </a>
+                <a href="./avatar.html">
+                    <div class="side-item">Avatar</div>
+                </a>
+                <a href="./badge.html">
+                    <div class="side-item">Badge</div>
+                </a>
+                <a href="./button.html">
+                    <div class="side-item">Button</div>
+                </a>
+                <a href="./card.html">
+                    <div class="side-item">Card</div>
+                </a>
+                <a href="./image.html">
+                    <div class="side-item">Image</div>
+                </a>
+                <a href="./input.html">
+                    <div class="side-item">Input</div>
+                </a>
+                <a href="./list.html">
+                    <div class="side-item">List</div>
+                </a>
+                <a href="./nav.html">
+                    <div class="side-item">Navbar</div>
+                </a>
+                <a href="./sidebar.html">
+                    <div class="side-item">Sidebar</div>
+                </a>
+                <a href="./typography.html">
+                    <div class="side-item">Topography</div>
+                </a>
+                <a href="./modal.html">
+                    <div class="side-item">Modal</div>
+                </a>
+                <a href="./rating.html">
+                    <div class="side-item">Rating</div>
+                </a>
+                <a href="./snackbar.html">
+                    <div class="side-item">Snackbar</div>
+                </a>
+                <a href="./grid.html">
+                    <div class="side-item">Grid</div>
+                </a>
+            </div>
+            <div class="contribute">
+                <a class="h6" target="_blank" href="https://github.com/DivyanshSareen/PeaceUI">
+                    <img src="logo-light.svg" alt="logo"> Contribute <i class="fa-brands fa-github-alt"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="page-content">
+        <header class="page-header">
+            <h3 class="h3">
+                Badge
+            </h3>
+        </header>
+        <section class="page-section">
+            <p class="paragraph1 page-section--para">
+                Badges can be used along with other elements to convey information.
+            </p>
+            <h4 class="h4 page-section--title">Text Badges</h4>
+            <h6 class="h6 page-section--title">Text Badges Typography</h6>
+            <div class="page-section--code">
+                <h2 class="h2">Heading H2 <span class="badge">badge</span></h2>
+                <h3 class="h3">Heading H3 <span class="badge">badge</span></h3>
+                <p class="sub-title1">Sub-title <span class="badge">badge</span></p>
+                <p class="paragraph1">Paragraph <span class="badge">badge</span></p>
+                <script type="text/plain" class="language-markup">
+<h2 class="h2">
+    Heading H2 <span class="badge">badge</span>
+</h2>
+<h3 class="h3">
+    Heading H3 <span class="badge">badge</span>
+</h3>
+<p class="sub-title1">
+    Sub-title <span class="badge">badge</span>
+</p>
+<p class="paragraph1">
+    Paragraph <span class="badge">badge</span>
+</p>
+            </script>
+            </div>
+            <h6 class="h6 page-section--title">Types of Text Badges</h6>
+            <div class="page-section--code">
+                <p class="badge badge-primary">primary</p>
+                <p class="badge badge-secondary">secondary</p>
+                <p class="badge badge-success">success</p>
+                <p class="badge badge-warning">warning</p>
+                <p class="badge badge-danger">danger</p>
+                <br>
+                <script type="text/plain" class="language-markup">
+<p class="badge badge-primary">primary</p>
+<p class="badge badge-secondary">secondary</p>
+<p class="badge badge-success">success</p>
+<p class="badge badge-warning">warning</p>
+<p class="badge badge-danger">danger</p>
+            </script>
+            </div>
+            <div class="page-section--title h6">Badge on Icon</div>
+            <p class="paragraph1">Use font-size property to size the font-awesome icons instead of using their
+                predefined classes. Ex. following icons have a font-size of 2rem</p>
+            <div class="page-section--code control-display-badge">
+
+                <div class="icon-badge">
+                    <i class="fa-solid fa-cart-shopping icon">
+                        <div class="badge-num">6</div>
+                    </i>
+                </div>
+                <div class="icon-badge">
+                    <i class="fa-regular fa-heart icon">
+                        <div class="badge-num">94</div>
+                    </i>
+                </div>
+                <div class="icon-badge">
+                    <i class="fa-solid fa-envelope icon">
+                        <div class="badge-num">20</div>
+                    </i>
+                </div>
+            </div>
+            <script type="text/plain" class="language-markup">
+<div class="icon-badge">
+    <i class="fa-solid fa-cart-shopping icon">
+        <div class="badge-num">6</div>
+    </i>
+</div>
+<div class="icon-badge">
+    <i class="fa-regular fa-heart icon">
+        <div class="badge-num">94</div>
+    </i>
+</div>
+<div class="icon-badge">
+    <i class="fa-solid fa-envelope icon">
+        <div class="badge-num">20</div>
+    </i>
+</div>
+            </script>
+        </section>
+    </section>
+    <section>
+    </section>
+    <script src="./prism.js"></script>
+</body>
+
+</html>
